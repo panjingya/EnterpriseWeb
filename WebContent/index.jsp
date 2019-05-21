@@ -7,6 +7,6 @@
 <title>my JSP page</title>
 </head>
 <body>
- the content of the JSP.
+ the content will change here
 </body>
 </html>
