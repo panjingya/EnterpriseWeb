@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>my JSP page</title>
+<title>Landing Page</title>
 </head>
 <body>
-<script>
-	//navigate to the index.jsp under the folder front
-	window.location.href="front/index.jsp";
-</script>
+Content
 </body>
 </html>
