@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<% String path = request.getContextPath();
+   String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +10,8 @@
 <title>Landing Page</title>
 <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 </head>
-<body style="overflow: hidden;">
+<body  style="overflow: hidden;">
+	<%@ include file="common_header.jsp" %>
 	<!-- 轮播 -->
 	<div id="fwslider" style="height: 554px;">
 		<div class="slider_container">
@@ -35,6 +39,38 @@
 			<span></span>
 		</div>
 	</div>
+	
+	<div class="main_bg">
+			<div class="business">
+				BUSINESS
+			</div>
+			<div class="wrap w_72">
+				<div class="grids_1_of_3">
+					<div class="grid_1_of_3  images_1_of_3">
+						<img src="img/pic1.png" >
+
+					</div>
+					<div class="grid_1_of_3  images_1_of_3">
+						<img src="img/pic2.png" >
+
+					</div>
+					<div class="grid_1_of_3  images_1_of_3">
+						<img src="img/pic3.png" >
+
+					</div>
+					<div class="grid_1_of_3  images_1_of_3">
+						<img src="img/pic4.png" >
+
+					</div>
+					<div class="grid_1_of_3  images_1_of_3"  style="background: none">
+						<img src="img/pic5.png" >
+
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+	</div>
+	
 </body>
 <script src="js/jquery.min.js">
 	

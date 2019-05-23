@@ -384,7 +384,9 @@ body {
 		position:relative;
 	}
 	.logo img{
-		max-width: 80%;
+		max-width: 70%;
+		padding-left:0;
+		margin-left:0;
 	}
 
     .pull-icon{
