@@ -171,7 +171,7 @@ public class News
 	    	Statement stmt = Conn.createStatement();
     		
 	    	ResultSet rs = null;
-	    	String sSql = "select * from News order by NewsID desc";   
+	    	String sSql = "select * from new order by NewsID desc";   
 	    	rs = stmt.executeQuery(sSql);
 	    	int z=0;
 	    	int newNum=0;
@@ -197,7 +197,7 @@ public class News
 		    	String newsTime =  format1.format(new Date());
 
 		    	StringBuffer sql= new StringBuffer();
-		    	sql.append("insert into News (NewsID,NewsTitle,NewsContent,NewsTime,AdminName) values (" +
+		    	sql.append("insert into new (NewsID,NewsTitle,NewsContent,NewsTime,AdminName) values (" +
 		    			" '"+newNum+"',"+
 		    			" '"+s[0]+"',"+
 		    			" '"+s[1]+"'," +
@@ -248,7 +248,7 @@ public class News
 	    	int NewsID = Fun.StrToInt(s0);
 	    			
 	    	StringBuffer sql = new StringBuffer();
-	    	sql.append("update News set NewsTitle='"+s[0]+"'" +
+	    	sql.append("update new set NewsTitle='"+s[0]+"'" +
 	    			   " ,NewsContent='"+s[1]+"'" +
 	    			   " where NewsID='"+NewsID+"'");
 			
@@ -280,7 +280,7 @@ public class News
 	    	else
 	    	{
 			  try{
-			    	String sql = "delete from News where NewsID=" + NewsID;
+			    	String sql = "delete from new where NewsID=" + NewsID;
 			    	
 			    	Conn.setAutoCommit(false);
 			    	stmt.executeUpdate(sql);
@@ -320,7 +320,7 @@ public class News
 	    	else
 	    	{
 				try{	
-			    	String sql = "select * from News where NewsID=" + NewsID;
+			    	String sql = "select * from new where NewsID=" + NewsID;
 			    	rs=stmt.executeQuery(sql);
 			    	
 			    	StringBuffer sb= new StringBuffer();
