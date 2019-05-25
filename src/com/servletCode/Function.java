@@ -18,7 +18,7 @@ public class Function {
 		String AdminPwd = "";
 		String User = CheckReplace(s1);
 		String Pwd = CheckReplace(s2);
-		String Sql = "select * from Admin where AdminName='" + User + "'";
+		String Sql = "select * from admin where AdminName='" + User + "'";
 		rs = stmt.executeQuery(Sql);
 		if (!rs.next()) {
 			OK = false;
