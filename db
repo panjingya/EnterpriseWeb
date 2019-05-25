@@ -1,0 +1,12 @@
+SELECT * FROM webdb.admin;
+
+AdminID  AdminName  AdminPwd  AdminType  LastLoginTime
+2	        May	      123	        1	        2019-5-23
+1	        mr	      mrsoft	    1	        2019-5-22
+				
+        
+SELECT * FROM webdb.new;
+NewsID  NewsTitle  NewsContent  NewsTime  AdminName
+1	      title	      content1	  2019-5-23	  May
+2	      title2	    content2	  2019-5-24 	May
+3	      title3	     content3	  2019-05-25 13:24	may
